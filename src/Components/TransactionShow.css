@@ -1,0 +1,17 @@
+.transactionInfo{
+  height: 395px;
+}
+
+section{
+  margin: 150px 550px;
+  border: 10px 10px blue ;
+  border-style: dashed;
+  width: 250px;
+  padding: 10px 0px;
+  text-align: center;
+  
+}
+button{
+  padding: 5px;
+  margin: 0px 10px;
+}

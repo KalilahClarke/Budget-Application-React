@@ -1,0 +1,61 @@
+.navigation{
+  display: grid;
+  grid-column: 1/5;
+  height: 100px;
+  background-color: #455e89;
+  color:rgb(125, 243, 198);
+
+}
+
+.navigation h1{
+  grid-column: 1/2;
+  padding-right: 750px;
+}
+.navigation h1:hover{
+  color: #390099;
+  opacity: 0.75;
+}
+
+.navigation button{
+  grid-column: 4/5;
+  height: 25px;
+  width: 150px;
+  margin-top: 30px;
+}
+
+button{
+  opacity: 0.5;
+  color: #723c70; 
+}
+
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 4px 4px 4px rgb(57, 56, 56);
+}
+
+
+/* footer */
+/* .transaction {
+  display: grid;
+  grid-column: 1/10;
+  border-bottom: solid navy 0.5px;
+  padding: 5px 0px;
+  text-align: center;
+  
+}
+.transactions{
+  overflow: scroll;
+}
+.date {
+  grid-column: 1/2;
+  text-align: left;
+  padding-left: 10px;
+}
+.name {
+  grid-column: 2/3;
+  text-align: left;
+}
+.amount {
+  grid-column: 9/10;
+  text-align: left;
+} */

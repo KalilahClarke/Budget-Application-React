@@ -1,0 +1,33 @@
+.transaction {
+  display: grid;
+  grid-column: 1/10;
+  border-bottom: solid navy 0.5px;
+  padding: 5px 0px;
+  text-align: center;
+  
+}
+.transactions{
+  height: 550px;
+  overflow: scroll;
+}
+.date {
+  grid-column: 1/2;
+  text-align: left;
+  padding-left: 10px;
+}
+.name {
+  grid-column: 2/3;
+  text-align: left;
+}
+.amount {
+  grid-column: 9/10;
+  text-align: left;
+}
+
+.negative{
+  color: red;
+}
+
+.positive{
+  color: green;
+}
