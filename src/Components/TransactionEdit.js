@@ -25,7 +25,7 @@ export default function TransactionEdit() {
 
   }
   
-  useEffect(() => {
+  useEffect((index) => {
     axios
       .get(`${API}/transactions/${index}`)
       .then((response) => setTransaction(response.data))

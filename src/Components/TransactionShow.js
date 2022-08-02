@@ -11,7 +11,7 @@ export default function TransactionShow() {
 
   const [transaction, setTransaction] = useState({});
 
-  useEffect(() => {
+  useEffect((index) => {
     axios
       .get(`${API}/transactions/${index}`)
       .then((response) => setTransaction(response.data))
