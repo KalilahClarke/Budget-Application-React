@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./Components/Nav";
+import TransactionsHome from '.Components/TransactionsHome'
 import TransactionsIndex from "./Components/TransactionsIndex";
 import TransactionShow from "./Components/TransactionShow";
 import TransactionNewForm from './Components/TransactionNewForm'
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Nav />
         <Routes>
+        <Route path='/' element={<TransactionsHome/>} />
         <Route path='/transactions' element = {<TransactionsIndex/>} />
         <Route path='/transactions/:index' element = {<TransactionShow/>}/>
         <Route path='/transactions/new' element = {<TransactionNewForm/>}/>
