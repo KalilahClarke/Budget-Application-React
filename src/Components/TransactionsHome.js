@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export default function TransactionsHome() {
   const navigate = useNavigate()
   return (
-    <div>
+    <div className='home'>
       <h1>
         Welcome to <br></br>Your <br></br> Budgeting Application 
         <br></br>
