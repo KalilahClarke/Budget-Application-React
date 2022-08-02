@@ -3,9 +3,12 @@ import './TransactionsHome.css'
 
 export default function TransactionsHome() {
   return (
-    <div>Welcome to Your Budgeting Application 
+    <div>
+      <h1>
+        Welcome to Your Budgeting Application 
         <br></br>
         Let's get Budgeting
+        </h1>
     </div>
   )
 }
