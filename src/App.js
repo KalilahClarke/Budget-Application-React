@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./Components/Nav";
-import TransactionsHome from '.Components/TransactionsHome'
+import TransactionsHome from './Components/TransactionsHome'
 import TransactionsIndex from "./Components/TransactionsIndex";
 import TransactionShow from "./Components/TransactionShow";
 import TransactionNewForm from './Components/TransactionNewForm'
