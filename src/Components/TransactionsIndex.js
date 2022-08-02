@@ -40,7 +40,7 @@ export default function TransactionsIndex() {
       {transactionsData.map((transaction, index) => {
         return (
           <div className="transaction" key={index}>
-            <p className="date">{transaction.date}</p>
+            <p className="date">{transaction.date.toPrimitive}</p>
             <Link to={`/transactions/${index}`}>
               <p className="name">{transaction.name}</p>
             </Link>
