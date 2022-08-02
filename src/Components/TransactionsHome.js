@@ -1,4 +1,5 @@
 import React from 'react'
+import './TransactionHome.css'
 
 export default function TransactionsHome() {
   return (

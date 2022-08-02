@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-        <Route path='/' element={<TransactionsHome/>} />
+        <Route path='/' element = {<TransactionsHome/>} />
         <Route path='/transactions' element = {<TransactionsIndex/>} />
         <Route path='/transactions/:index' element = {<TransactionShow/>}/>
         <Route path='/transactions/new' element = {<TransactionNewForm/>}/>
