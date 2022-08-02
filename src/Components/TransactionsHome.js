@@ -1,5 +1,5 @@
 import React from 'react'
-import './TransactionHome.css'
+import './TransactionsHome.css'
 
 export default function TransactionsHome() {
   return (
