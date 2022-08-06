@@ -20,16 +20,20 @@ export default function TransactionEdit() {
   const handleTextChange = (event) => {
     setTransaction({ ...transaction, [event.target.id]: event.target.value });
   };
-  const handleAmount = (event) =>{
-    setTransaction({ ...transaction, [event.target.id]: Number(event.target.value)})
+  console.log(transaction);
+  const handleAmount = (event) => {
+    setTransaction({
+      ...transaction,
+      [event.target.id]: Number(event.target.value),
+    });
+  };
 
-  }
-  
   useEffect(() => {
     axios
       .get(`${API}/transactions/${index}`)
-      .then((response) => {setTransaction(response.data)
-        console.log(response.data)
+      .then((response) => {
+        setTransaction(response.data);
+        console.log(response.data);
       })
       .catch((error) => console.log(error));
   }, [index]);
@@ -43,8 +47,8 @@ export default function TransactionEdit() {
       })
       .catch((error) => console.error(error));
   };
-  
-  console.log(transaction.amount)
+
+  console.log(transaction.amount);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -83,9 +87,14 @@ export default function TransactionEdit() {
       />
       <br></br>
 
-      <label>Transaction Category:</label>
-      <select onChange={handleTextChange} value ={transaction.category}>
-        <option value="" disabled >
+      <label>Transaction Category:
+
+      <select
+        onChange={handleTextChange}
+        id="category"
+        value={transaction.category}
+      >
+        <option value="" disabled>
           Select One
         </option>
         <option value="Car">Car</option>
@@ -95,7 +104,9 @@ export default function TransactionEdit() {
         <option value="Investment">Investment</option>
         <option value="Miscellaneous">Miscellaneous</option>
       </select>
+        </label>
       <br></br>
+      
       <input type="submit" />
       <Link to={`/transactions/${index}`}>
         <button>Nevermind!</button>
