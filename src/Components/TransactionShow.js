@@ -8,13 +8,18 @@ const API = process.env.REACT_APP_API_URL;
 export default function TransactionShow() {
   const navigate = useNavigate();
   const { index } = useParams();
-
+  
+  
   const [transaction, setTransaction] = useState({});
 
-  useEffect((index) => {
+  useEffect(() => {
     axios
       .get(`${API}/transactions/${index}`)
-      .then((response) => setTransaction(response.data))
+      .then((response) => {
+        setTransaction(response.data);
+        console.log(response);
+      })
+
       .catch((error) => console.error(error));
   }, []);
 
