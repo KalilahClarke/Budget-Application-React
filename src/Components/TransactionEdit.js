@@ -32,7 +32,7 @@ export default function TransactionEdit() {
         console.log(response.data)
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [index]);
 
   const updateTransactions = () => {
     axios

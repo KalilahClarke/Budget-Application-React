@@ -21,7 +21,7 @@ export default function TransactionShow() {
       })
 
       .catch((error) => console.error(error));
-  }, []);
+  }, [index]);
 
   const handleDelete = () => {
     axios
