@@ -25,10 +25,12 @@ export default function TransactionEdit() {
 
   }
   
-  useEffect((index) => {
+  useEffect(() => {
     axios
       .get(`${API}/transactions/${index}`)
-      .then((response) => setTransaction(response.data))
+      .then((response) => {setTransaction(response.data)
+        console.log(response.data)
+      })
       .catch((error) => console.log(error));
   }, []);
 
@@ -42,12 +44,11 @@ export default function TransactionEdit() {
       .catch((error) => console.error(error));
   };
   
+  console.log(transaction.amount)
 
   const handleSubmit = (event) => {
     event.preventDefault();
     updateTransactions();
-    debugger
-    console.log(typeof transaction.amount)
     navigate("/transactions");
   };
 
